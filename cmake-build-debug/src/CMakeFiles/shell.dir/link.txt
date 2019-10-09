@@ -1,0 +1,2 @@
+F:\Code\mingw32\bin\ar.exe qc ..\..\lib\libshelld.a  CMakeFiles/shell.dir/shell/shell.cpp.obj
+F:\Code\mingw32\bin\ranlib.exe ..\..\lib\libshelld.a
