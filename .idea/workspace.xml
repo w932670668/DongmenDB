@@ -26,19 +26,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b38b041-d43d-4061-aa56-c309474eaeff" name="Default" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/demodb/student.tbl" afterPath="$PROJECT_DIR$/bin/demodb/student.tbl" />
-      <change beforePath="$PROJECT_DIR$/bin/dmdb.exe" afterPath="$PROJECT_DIR$/bin/dmdb.exe" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dmdb.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dmdb.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/parser.dir/__/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/parser.dir/__/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/parser.dir/__/src_experiment/exp_07_physical_operate/exp_07_06_delete.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/parser.dir/__/src_experiment/exp_07_physical_operate/exp_07_06_delete.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_01_stmt_parser/CMakeFiles/exp_01_05_delete_test.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_01_stmt_parser/CMakeFiles/exp_01_05_delete_test.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/lib/libparserd.a" afterPath="$PROJECT_DIR$/lib/libparserd.a" />
-      <change beforePath="$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp" afterPath="$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp" />
-      <change beforePath="$PROJECT_DIR$/src_experiment/exp_07_physical_operate/exp_07_05_update.cpp" afterPath="$PROJECT_DIR$/src_experiment/exp_07_physical_operate/exp_07_05_update.cpp" />
-      <change beforePath="$PROJECT_DIR$/src_experiment/exp_07_physical_operate/exp_07_06_delete.cpp" afterPath="$PROJECT_DIR$/src_experiment/exp_07_physical_operate/exp_07_06_delete.cpp" />
-    </list>
+    <list default="true" id="6b38b041-d43d-4061-aa56-c309474eaeff" name="Default" comment="update" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/Testing/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -102,7 +90,7 @@
       <file leaf-file-name="exp_01_05_delete.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
+            <state relative-caret-position="525">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
@@ -323,12 +311,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570531224003</updated>
-      <workItem from="1570531229003" duration="37539000" />
+      <workItem from="1570531229003" duration="37655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37539000" />
+    <option name="totallyTimeSpent" value="37655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -732,7 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
+        <state relative-caret-position="525">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
