@@ -27,17 +27,21 @@ int ExecutionPlan::executeUpdate(DongmenDB *db, sql_stmt_update *sqlStmtUpdate, 
 
         for(int i = 0; i < fields.size(); i++) {
             scan->evaluateExpression(fieldsExpr[i], scan, var);
+
             if(var->type == DATA_TYPE_INT) {
                 scan->setInt(string(sqlStmtUpdate->tableName), string(fields[i]), var->intValue);
             } else if(var->type == DATA_TYPE_CHAR) {
                 scan->setString(string(sqlStmtUpdate->tableName), string(fields[i]), var->strValue);
             }
 
-            /* 输出原始指定字段的数据
+            /*
+            // 输出原始指定字段的数据
             if(var->type == DATA_TYPE_INT) {
                 printf("%s : %d\n", fields[i], scan->getInt(string(sqlStmtUpdate->tableName), string(fields[i])));
             } else if(var->type == DATA_TYPE_CHAR) {
                 printf("%s : %s\n", fields[i], scan->getString(string(sqlStmtUpdate->tableName), string(fields[i])).c_str());
+            } else {
+                printf("KKK\n");
             }
             */
             /* 输出要修改的字段的数据

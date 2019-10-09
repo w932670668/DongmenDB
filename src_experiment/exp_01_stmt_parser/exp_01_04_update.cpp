@@ -72,10 +72,10 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
     fieldsExpr.push_back(expr);
 
     token = this->parseNextToken();
-    this->parseEatToken();
+
 
     while (token && token->type == TOKEN_COMMA) {
-
+        this->parseEatToken();
         token = this->parseNextToken();
         if (!token || token->type != TOKEN_WORD) {
             strcpy(this->parserMessage, "invalid sql: missing field.");
@@ -101,6 +101,7 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
             return NULL;
         }
         fieldsExpr.push_back(expr);
+        token = this->parseNextToken();
     }
 
     //匹配where
