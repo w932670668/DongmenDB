@@ -1,0 +1,10 @@
+.open demodb
+.optimizer select student.*, sc.*, course.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno and course.cno = 'c001' and grade >= 80 and student.sname = 'tom simith'
+.optimizer select student.sno, sc.cno,sname,grade, cname from student, sc, course where student.sno = sc.sno and sc.cno = course.cno and grade >= 80
+.optimizer select sno,cno,grade, cname from sc, course where sc.cno = course.cno and grade > 80
+.optimizer select student.*, grade from student, sc where student.sno = sc.sno and sname = 'tom simith' and grade >= 80
+.optimizer select student.*, sc.* from student, sc where student.sno = sc.sno
+.optimizer select student.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno
+.optimizer select student.*, sc.*, course.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno and course.cno = 'c001'
+.optimizer select student.*, sc.*, course.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno and course.cno = 'c001' and grade >= 80
+.optimizer select student.sno, sc.cno,sname,grade, cname from course,student, sc where grade >= 80 and sc.cno = course.cno and student.sno = sc.sno
