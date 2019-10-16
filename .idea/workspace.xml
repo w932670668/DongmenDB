@@ -2,21 +2,21 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="DongmenDB" targetName="exp_01_04_update_test" />
-      <config projectName="DongmenDB" targetName="physicalplan" />
-      <config projectName="DongmenDB" targetName="gtest_main" />
-      <config projectName="DongmenDB" targetName="parser" />
+      <config projectName="DongmenDB" targetName="dongmensql" />
       <config projectName="DongmenDB" targetName="Exp_05_02_ConditionPushdownTest" />
-      <config projectName="DongmenDB" targetName="dongmendb" />
-      <config projectName="DongmenDB" targetName="dmdb" />
-      <config projectName="DongmenDB" targetName="exp_01_05_delete_test" />
       <config projectName="DongmenDB" targetName="test_parser_expression" />
+      <config projectName="DongmenDB" targetName="gtest" />
+      <config projectName="DongmenDB" targetName="utils" />
+      <config projectName="DongmenDB" targetName="dmdb" />
+      <config projectName="DongmenDB" targetName="physicalplan" />
       <config projectName="DongmenDB" targetName="shell" />
       <config projectName="DongmenDB" targetName="exp_01_03_select_test" />
-      <config projectName="DongmenDB" targetName="dongmensql" />
+      <config projectName="DongmenDB" targetName="gtest_main" />
+      <config projectName="DongmenDB" targetName="exp_01_04_update_test" />
+      <config projectName="DongmenDB" targetName="dongmendb" />
       <config projectName="DongmenDB" targetName="test_base" />
-      <config projectName="DongmenDB" targetName="utils" />
-      <config projectName="DongmenDB" targetName="gtest" />
+      <config projectName="DongmenDB" targetName="parser" />
+      <config projectName="DongmenDB" targetName="exp_01_05_delete_test" />
       <config projectName="DongmenDB" targetName="exp_01_01_create_table_test" />
     </generated>
   </component>
@@ -27,7 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c001f26-059f-4299-afbb-e04a4e317189" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp" afterPath="$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/Testing/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -48,8 +48,8 @@
       <file leaf-file-name="exp_05_02_condition_push_down.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="462" column="0" lean-forward="true" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="334" selection-end-column="2" />
               <folding>
                 <element signature="e#76#96#0" expanded="true" />
               </folding>
@@ -84,6 +84,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>print</find>
+      <find>那</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -269,11 +270,12 @@
       <workItem from="1570849902379" duration="47318000" />
       <workItem from="1571044514634" duration="52848000" />
       <workItem from="1571206454883" duration="509000" />
+      <workItem from="1571208027986" duration="54000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124989000" />
+    <option name="totallyTimeSpent" value="125043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -281,7 +283,6 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -296,6 +297,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -350,7 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -444,7 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2541">
           <caret line="121" column="25" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1386">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="462" column="0" lean-forward="true" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+        <state relative-caret-position="304">
+          <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="334" selection-end-column="2" />
           <folding>
             <element signature="e#76#96#0" expanded="true" />
           </folding>

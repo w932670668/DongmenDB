@@ -232,6 +232,9 @@ int get_sra_select_idx_by_sra(SRA_t *sra, vector<SRA_t *> &sra_select_index) {
     return -1;
 }
 
+/*
+ * 通过字段名获取其表名
+ */
 
 string get_table_name_by_column_name(SRA_t *sra, string column_name, TableManager *tableManager, Transaction *transaction) {
     switch (sra->t) {
@@ -330,7 +333,7 @@ void get_branch_table_names(SRA_t *sra, vector<string> &table_names) {
 }
 
 /*
- * 检查sra_join的那条子分支可以交换
+ * 检查sra_join的哪条子分支可以交换
  */
 
 SRAJoinBranch check_branch(SRA_t *sra, vector<string> &table_names) {
