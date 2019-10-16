@@ -16,7 +16,6 @@ protected:
         _m_list[5] = "select student.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno";
         _m_list[6] = "select student.*, sc.*, course.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno and course.cno = 'c001'";
         _m_list[7] = "select student.*, sc.*, course.* from student, sc, course where student.sno = sc.sno and sc.cno = course.cno and course.cno = 'c001' and grade >= 80";
-
     }
 
     const char *_m_list[14];

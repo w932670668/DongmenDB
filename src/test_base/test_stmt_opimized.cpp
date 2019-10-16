@@ -1,7 +1,7 @@
 //
 // Created by sam on 2018/11/10.
 //
-// Bug fixed by Gary on 2019/10/16
+// Bug fixed by genghanqiang on 2019/10/16
 //
 
 #include <test/test_stmt_optimized.h>
@@ -103,27 +103,57 @@ int opt_fields_test(Expression *expr, SRA_t *sra, TableManager *tableManager, Tr
     if (expr == NULL) {
         return 0;
     }
-    if (expr->term != NULL) {
-        switch (expr->term->t) {
-            case TERM_COLREF:
-                return opt_field_test(sra, expr->term->ref->tableName, expr->term->ref->columnName, tableManager,
-                                      transaction);
-            default:
-                return 0;
+
+    int res = 1;
+
+    while (expr) {
+        if (expr->term != NULL and expr->term->t == TERM_COLREF) {
+            res = res * opt_field_test(sra, expr->term->ref->tableName, expr->term->ref->columnName, tableManager,
+                                       transaction);
         }
-    } else {
-        return opt_fields_test(expr->nextexpr, sra, tableManager, transaction);
+        expr = expr->nextexpr;
     }
+
+    return res;
 }
 
-int opt_optimed_test(Expression *expr, SRA_t *sra, TableManager *tableManager, Transaction *transaction) {
+/*
+ * 检查SRA_Select是否在最优位置
+ */
+int opt_optimed_test(SRA_t *sra, TableManager *tableManager, Transaction *transaction) {
+    // 判断sra_select下是否有sra_join
+    bool if_has_join = false;
+    SRA_t *sra_tmp = sra;
+    while (sra_tmp->t != SRA_TABLE) {
+        if (sra_tmp->t == SRA_JOIN) {
+            if_has_join = true;
+            break;
+        }
+        else if (sra_tmp->t == SRA_SELECT) {
+            sra_tmp = sra_tmp->select.sra;
+        } else if (sra_tmp->t == SRA_PROJECT) {
+            sra_tmp = sra_tmp->project.sra;
+        }
+    }
 
-    switch (sra->t) {
-        case SRA_JOIN:
-            /*检测expr中的字段属性是否在某个操作对象中，若是则返回1*/
-            return opt_fields_test(expr, sra, tableManager, transaction);
-        default:
-            return 0;
+    // 判断sra_select使用的表是否全部包含于其下的路径中
+    int res = opt_fields_test(sra->select.cond, sra, tableManager, transaction);
+
+    // 如果sra_select下有sra_join，则继续判断，否则返回结果
+    if (if_has_join) {
+        // 如果全部包含则继续判断，否则返回结果
+        if (res) {
+            // 判断sra_join左分支是否全部包含sra_select所使用的表
+            int res_left = opt_fields_test(sra->select.cond, sra_tmp->join.sra1, tableManager, transaction);
+            // 判断sra_join右分支是否全部包含sra_select所使用的表
+            int res_right = opt_fields_test(sra->select.cond, sra_tmp->join.sra2, tableManager, transaction);
+            // 左右分支都不完全包含则返回0（结果正确），否则返回1（结果错误）
+            return !(!res_left and !res_right);
+        } else {
+            return !res;
+        }
+    } else {
+        return !res;
     }
 }
 
@@ -131,8 +161,8 @@ int opt_optimed_test(Expression *expr, SRA_t *sra, TableManager *tableManager, T
 int opt_test(SRA_t *sra, TableManager *tableManager, Transaction *transaction) {
     switch (sra->t) {
         case SRA_SELECT: {
-            /*寻找子树中JOIN操作，若条件属性均包含在JOIN操作的某个分支中，则返回1*/
-            int ret = opt_optimed_test(sra->select.cond, sra, tableManager, transaction);
+            /*判断select是否在最优位置，是则返回0，否则返回1*/
+            int ret = opt_optimed_test(sra, tableManager, transaction);
             if (ret) {
                 return ret;
             } else {

@@ -1,7 +1,7 @@
 //
 // Created by Sam on 2018/2/13.
 //
-// Finished by Gary on 2019/10/16
+// Finished by genghanqiang on 2019/10/16
 //
 
 #include <algorithm>
@@ -495,8 +495,14 @@ dongmengdb_algebra_optimize_condition_pushdown(SRA_t *sra, TableManager *tableMa
     // 拆分sra_select
     sra_select_split(sra_root, sra_select_index);
     // 移动sra_select至最优位置
+    printf("\n===before===\n");
+    SRA_print(sra_root);
+    printf("\n============\n");
     sra_select_optimize(sra_root, sra_select_index, tableManager, transaction);
-    
+    printf("\n===after===\n");
+    SRA_print(sra_root);
+    printf("\n===========\n");
+
 
     return sra_root;
 }

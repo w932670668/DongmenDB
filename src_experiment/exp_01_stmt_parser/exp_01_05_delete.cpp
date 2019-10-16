@@ -1,7 +1,7 @@
 //
 // Created by Sam on 2018/2/13.
 //
-// Finished by Gary on 2019/10/09
+// Finished by genghanqiang on 2019/10/09
 //
 
 #include <dongmensql/sqlstatement.h>
