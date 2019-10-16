@@ -29,7 +29,7 @@ src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir
  ../include/relationalalgebra/sra.h
  ../include/shell/shell.h
  ../include/utils/utils.h
- D:/Project/GitHub/DongmenDB-origin/src/shell/shell.cpp
+ D:/Project/GitHub/DongmenDB/src/shell/shell.cpp
 src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/exp_05_02_condition_push_down_test.cpp.obj
  ../googletest/include/gtest/gtest-death-test.h
  ../googletest/include/gtest/gtest-message.h
@@ -80,4 +80,4 @@ src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir
  ../include/test/test_stmt_optimized.h
  ../include/test/test_stmt_parser.h
  ../include/utils/utils.h
- D:/Project/GitHub/DongmenDB-origin/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp
+ D:/Project/GitHub/DongmenDB/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp

@@ -1,6 +1,8 @@
 //
 // Created by sam on 2018/11/10.
 //
+// Bug fixed by Gary on 2019/10/16
+//
 
 #include <test/test_stmt_optimized.h>
 #include <relationalalgebra/optimizer.h>
@@ -129,8 +131,8 @@ int opt_optimed_test(Expression *expr, SRA_t *sra, TableManager *tableManager, T
 int opt_test(SRA_t *sra, TableManager *tableManager, Transaction *transaction) {
     switch (sra->t) {
         case SRA_SELECT: {
-            /*寻找子树中JOIM操作，若条件属性均包含在JOIN操作的某个分支中，则返回1*/
-            int ret = opt_optimed_test(sra->select.cond, sra->select.sra, tableManager, transaction);
+            /*寻找子树中JOIN操作，若条件属性均包含在JOIN操作的某个分支中，则返回1*/
+            int ret = opt_optimed_test(sra->select.cond, sra, tableManager, transaction);
             if (ret) {
                 return ret;
             } else {

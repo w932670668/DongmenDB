@@ -27,7 +27,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c001f26-059f-4299-afbb-e04a4e317189" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp" afterPath="$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest_main.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest_main.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest_main.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest/CMakeFiles/gtest_main.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/dongmensql.dir/__/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/dongmensql.dir/__/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/test_base.dir/test_base/test_stmt_opimized.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/test_base.dir/test_base/test_stmt_opimized.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/src_experiment/exp_05_algebra_opt/CMakeFiles/Exp_05_02_ConditionPushdownTest.dir/objects.a" />
+      <change beforePath="$PROJECT_DIR$/lib/libdongmensqld.a" afterPath="$PROJECT_DIR$/lib/libdongmensqld.a" />
+      <change beforePath="$PROJECT_DIR$/lib/libtest_based.a" afterPath="$PROJECT_DIR$/lib/libtest_based.a" />
+      <change beforePath="$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp" afterPath="$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/Testing/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -45,14 +57,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="exp_05_02_condition_push_down.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exp_05_02_condition_push_down.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="334" selection-end-column="2" />
+              <caret line="334" column="2" lean-forward="false" selection-start-line="334" selection-start-column="2" selection-end-line="334" selection-end-column="2" />
               <folding>
                 <element signature="e#76#96#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exp_05_02_condition_push_down_test.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_stmt_opimized.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2856">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,6 +130,7 @@
         <option value="$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_04_update.cpp" />
         <option value="$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp" />
         <option value="$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp" />
+        <option value="$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp" />
       </list>
     </option>
   </component>
@@ -108,7 +141,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-144" />
     <option name="y" value="53" />
     <option name="width" value="1400" />
@@ -179,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.dmdb">
+  <component name="RunManager" selected="Application.Exp_05_02_ConditionPushdownTest">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DongmenDB" RUN_TARGET_NAME="dmdb" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
@@ -271,23 +304,25 @@
       <workItem from="1571044514634" duration="52848000" />
       <workItem from="1571206454883" duration="509000" />
       <workItem from="1571208027986" duration="54000" />
+      <workItem from="1571224148642" duration="1431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125043000" />
+    <option name="totallyTimeSpent" value="126474000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -297,7 +332,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -317,22 +351,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp</url>
-          <line>177</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp</url>
-          <line>184</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp</url>
-          <line>134</line>
+          <line>136</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp</url>
-          <line>123</line>
+          <line>125</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
@@ -650,25 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="108" column="20" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dongmendb/MetadataManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2541">
           <caret line="121" column="25" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -693,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_04_update.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -711,13 +712,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src_experiment/exp_01_stmt_parser/exp_01_05_delete.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="334" selection-end-column="2" />
+          <caret line="334" column="2" lean-forward="false" selection-start-line="334" selection-start-column="2" selection-end-line="334" selection-end-column="2" />
           <folding>
             <element signature="e#76#96#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_base/test_stmt_opimized.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2856">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

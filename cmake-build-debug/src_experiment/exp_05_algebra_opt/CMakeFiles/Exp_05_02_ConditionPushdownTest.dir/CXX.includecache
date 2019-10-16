@@ -538,7 +538,7 @@ physicalplan/ExecutionPlan.h
 
 ../include/utils/utils.h
 
-D:/Project/GitHub/DongmenDB-origin/src/shell/shell.cpp
+D:/Project/GitHub/DongmenDB/src/shell/shell.cpp
 string.h
 -
 utils/utils.h
@@ -564,9 +564,9 @@ iostream
 parser/StatementParser.h
 -
 shell/shell.h
-D:/Project/GitHub/DongmenDB-origin/src/shell/shell/shell.h
+D:/Project/GitHub/DongmenDB/src/shell/shell/shell.h
 
-D:/Project/GitHub/DongmenDB-origin/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp
+D:/Project/GitHub/DongmenDB/src_experiment/exp_05_algebra_opt/exp_05_02_condition_push_down_test.cpp
 test/test_stmt_optimized.h
 -
 
