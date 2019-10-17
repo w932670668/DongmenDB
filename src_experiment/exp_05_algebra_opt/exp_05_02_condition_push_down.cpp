@@ -495,13 +495,13 @@ dongmengdb_algebra_optimize_condition_pushdown(SRA_t *sra, TableManager *tableMa
     // 拆分sra_select
     sra_select_split(sra_root, sra_select_index);
     // 移动sra_select至最优位置
-    printf("\n===before===\n");
-    SRA_print(sra_root);
-    printf("\n============\n");
+//    printf("\n===before===\n");
+//    SRA_print(sra_root);
+//    printf("\n============\n");
     sra_select_optimize(sra_root, sra_select_index, tableManager, transaction);
-    printf("\n===after===\n");
-    SRA_print(sra_root);
-    printf("\n===========\n");
+//    printf("\n===after===\n");
+//    SRA_print(sra_root);
+//    printf("\n===========\n");
 
 
     return sra_root;

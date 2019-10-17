@@ -520,7 +520,7 @@ physicalplan/ExecutionPlan.h
 
 ../include/utils/utils.h
 
-D:/Project/GitHub/DongmenDB-origin/src/shell/shell.cpp
+D:/Project/GitHub/DongmenDB/src/shell/shell.cpp
 string.h
 -
 utils/utils.h
@@ -546,9 +546,9 @@ iostream
 parser/StatementParser.h
 -
 shell/shell.h
-D:/Project/GitHub/DongmenDB-origin/src/shell/shell/shell.h
+D:/Project/GitHub/DongmenDB/src/shell/shell/shell.h
 
-D:/Project/GitHub/DongmenDB-origin/src_experiment/exp_01_stmt_parser/exp_01_05_delete_test.cpp
+D:/Project/GitHub/DongmenDB/src_experiment/exp_01_stmt_parser/exp_01_05_delete_test.cpp
 stdlib.h
 -
 gtest/gtest.h

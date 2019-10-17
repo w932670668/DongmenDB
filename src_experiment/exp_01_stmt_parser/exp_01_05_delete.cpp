@@ -38,12 +38,12 @@ sql_stmt_delete *DeleteParser::parse_sql_stmt_delete(){
     }
     this->parseEatToken();
 
-    //匹配where
+    // 匹配where
     token = this->parseNextToken();
     TableReference_t *ref = TableReference_make(tableName, NULL);
     SRA_t *sra = SRATable(ref);
     if (this->matchToken( TOKEN_RESERVED_WORD, "where")) {
-        //匹配where子句
+        // 匹配where子句
         Expression *expr = this->parseExpressionRD();
         if (!expr) {
             return NULL;
@@ -53,7 +53,7 @@ sql_stmt_delete *DeleteParser::parse_sql_stmt_delete(){
 
     where = sra;
 
-    //返回sql_stmt_delete结构
+    // 返回sql_stmt_delete结构
     sql_stmt_delete *sqlStmtDelete = (sql_stmt_delete *)calloc(sizeof(sql_stmt_delete),1);
     sqlStmtDelete->tableName = tableName;
     sqlStmtDelete->where = where;

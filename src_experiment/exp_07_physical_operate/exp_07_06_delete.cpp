@@ -29,5 +29,6 @@ int ExecutionPlan::executeDelete(DongmenDB *db, sql_stmt_delete *sqlStmtDelete, 
         record_num += 1;
     }
 
+    scan->close();
     return record_num;
 };

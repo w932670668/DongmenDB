@@ -25,13 +25,13 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
     vector<Expression*> fieldsExpr;  //set fields expression 新值(表达式)列表
     SRA_t *where;
 
-    //匹配关键字update
+    // 匹配关键字update
     if (!this->matchToken( TOKEN_RESERVED_WORD, "update")) {
         return NULL;
     }
 
 
-    //获取表名
+    // 获取表名
     Token *token = this->parseNextToken();
 
     if (token && token->type == TOKEN_WORD) {
@@ -43,14 +43,14 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
     }
     this->parseEatToken();
 
-    //匹配关键字set
+    // 匹配关键字set
     token = this->parseNextToken();
     if (!this->matchToken( TOKEN_RESERVED_WORD, "set")) {
         strcpy(this->parserMessage, "invalid sql: should be set.");
         return NULL;
     }
 
-    //获取field
+    // 获取field
     token = this->parseNextToken();
     if (!token || token->type != TOKEN_WORD) {
         strcpy(this->parserMessage, "invalid sql: missing field name.");
@@ -62,7 +62,7 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
     fields.push_back(field);
     this->parseEatToken();
 
-    //匹配=
+    // 匹配=
     token = this->parseNextToken();
     if (!token || token->type != TOKEN_EQ) {
         strcpy(this->parserMessage, "invalid sql: missing =.");
@@ -70,7 +70,7 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
     }
     this->parseEatToken();
 
-    //获取fieldExpr
+    // 获取fieldExpr
     Expression *expr = this->parseExpressionRD();
     fieldsExpr.push_back(expr);
 
@@ -90,7 +90,7 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
         fields.push_back(field);
         this->parseEatToken();
 
-        //匹配=
+        // 匹配=
         token = this->parseNextToken();
         if (!token || token->type != TOKEN_EQ) {
             strcpy(this->parserMessage, "invalid sql: missing =.");
@@ -98,7 +98,7 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
         }
         this->parseEatToken();
 
-        //获取fieldExpr
+        // 获取fieldExpr
         Expression *expr = this->parseExpressionRD();
         if (!expr) {
             return NULL;
@@ -107,12 +107,12 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
         token = this->parseNextToken();
     }
 
-    //匹配where
+    // 匹配where
     token = this->parseNextToken();
     TableReference_t *ref = TableReference_make(tableName, NULL);
     SRA_t *sra = SRATable(ref);
     if (this->matchToken( TOKEN_RESERVED_WORD, "where")) {
-        //匹配where子句
+        // 匹配where子句
         Expression *expr = this->parseExpressionRD();
         if (!expr) {
             return NULL;
@@ -124,7 +124,7 @@ sql_stmt_update *UpdateParser::parse_sql_stmt_update() {
 
 
 
-    //返回sql_stmt_update结构
+    // 返回sql_stmt_update结构
     sql_stmt_update *sqlStmtUpdate = (sql_stmt_update *)calloc(sizeof(sql_stmt_update),1);
     sqlStmtUpdate->tableName = tableName;
     sqlStmtUpdate->fields = fields;
