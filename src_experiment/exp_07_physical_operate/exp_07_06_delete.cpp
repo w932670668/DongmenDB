@@ -1,6 +1,9 @@
 //
 // Created by sam on 2018/9/18.
 //
+// Finished by genghanqiang on 2019/10/09
+//
+
 #include <physicalplan/ExecutionPlan.h>
 #include <physicalplan/TableScan.h>
 #include <physicalplan/Select.h>
@@ -13,9 +16,19 @@
  * */
 
 int ExecutionPlan::executeDelete(DongmenDB *db, sql_stmt_delete *sqlStmtDelete, Transaction *tx){
-        /*删除语句以select的物理操作为基础实现。
-     * 1. 使用 sql_stmt_delete 的条件参数，调用 physical_scan_select_create 创建select的物理计划并初始化;
-     * 2. 执行 select 的物理计划，完成 delete 操作
-     * */
-    return -1;
+
+    // 创建Scan，获取满足关系代数的记录
+    Scan *scan = generateScan(db, sqlStmtDelete->where, tx);
+
+    // 总记录条数
+    int record_num = 0;
+
+    while (scan->next()) {
+        // 删除记录
+        scan->deleteRecord();
+        record_num += 1;
+    }
+
+    scan->close();
+    return record_num;
 };
